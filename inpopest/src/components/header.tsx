@@ -1,4 +1,4 @@
-import { Home, Info, Users, HelpCircle } from "lucide-react";
+import { Home, Mic, Users, Trophy, Laptop } from "lucide-react";
 import { NavLink } from "./ui/NavLink";
 
 export const Header: React.FC = () => {
@@ -6,9 +6,10 @@ export const Header: React.FC = () => {
 
     const menuItems = [
         {label: "Beranda", href:"#", icon: <Home size={18} />},
-        {label: "Tentang", href:"#about", icon: <Info size={18} />},
-        {label: "Narasumber", href:"#speaker", icon: <Users size={18} />},
-        {label: "FAQ", href:"#faq", icon: <HelpCircle size={18} />},
+        {label: "Competition", href:"#competition", icon: <Trophy size={18} />},
+        {label: "Seminar", href:"#seminar", icon: <Users size={18} />},
+        {label: "Workshop", href:"#workshop", icon: <Laptop size={18} />},
+        {label: "Talkshow", href:"#Talkshow", icon: <Mic size={18} />},
     ];
     
     return(
