@@ -12,7 +12,7 @@ export const Collaps: React.FC<CollapsProps> = ({
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     return(
-        <div className="border border-gray-400 rounded-lg">
+        <div className="border-gray-400 border-4 rounded-md shadow-md  border-r-6 border-r-red-600">
             <button onClick={() => setIsOpen(!isOpen)}
                 className="cursor-pointer w-full px-4 py-3 flex intems-center gap-4 bg-white hover:bg-gray-50 transition-colors"
                 >
@@ -30,7 +30,7 @@ export const Collaps: React.FC<CollapsProps> = ({
 
             {isOpen && (
                 <div className="px-4 py-3 bg-gray-300 border-t border-gray-200">
-                    <p className="text-gray-300">{description}</p>
+                    <p className="text-black">{description}</p>
                 </div>
             )}
         </div>

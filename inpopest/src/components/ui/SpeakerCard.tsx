@@ -24,8 +24,8 @@ export const SpeakerCard: React.FC<SperakerCardProps> = ({
                 <div className="absolute bottom-0 px-4 py-6 rounded-lg w-full h-full flex flex-col items-center gap-2 group-hover:bg-red-300 backdrop-blur-sm transition-all duration-300">
                 </div>
                 <div className="absolute left-0 right-0 bottom-0 items-center justify-center p-4 flex flex-col gap-2">
-                    <h3 className="text-2xl text-red-300 font-semibold">{name}</h3>
-                    <p className="text-sm text-gray-200 text-center">{role}</p>
+                    <h3 className="text-2xl text-red-900 font-semibold">{name}</h3>
+                    <p className="text-sm text-gray-700 text-center">{role}</p>
                 </div>
             </div>
         </div>
