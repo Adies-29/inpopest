@@ -1,7 +1,7 @@
 interface ButtonProps {
     label: string;
     variant?: "primary" | "secondary";
-    className: string;
+    className?: string;
     onClick?: () => void;
 }
 
