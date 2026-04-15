@@ -1,5 +1,5 @@
 import './App.css'
-import Header from './components/header';
+import Header from './components/Header';
 import Button from './components/ui/Button';
 import SpeakerCard from './components/ui/SpeakerCard';
 import { Collaps } from './components/ui/Collaps';
