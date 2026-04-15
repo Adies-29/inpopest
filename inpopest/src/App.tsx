@@ -4,26 +4,27 @@ import Button from './components/ui/Button';
 import SpeakerCard from './components/ui/SpeakerCard';
 import { Collaps } from './components/ui/Collaps';
 import { Card } from './components/ui/Card'
+import Footer from './components/Footer';
 
 
 
 function App() {
   const speakers = [
     {
-      name:"Raditya Dika",
-      role:"Penulis, Komedian, Sutradara,",
-      imageUrl:"https://www.qubisa.com/_next/image?url=https%3A%2F%2Fqubisastorage.blob.core.windows.net%2Ffiles%2Fprofiles%2F17060%2Fimg300%2F17060-20210317104052321.jpg&w=1920&q=75"
+      name:"Dery Agung Triyadi",
+      role:"Aws Indonesia",
+      imageUrl:"https://www.invofest-harkatnegeri.com/assets/seminar/Seminar%20Dery.png"
 
     },
     {
-      name:"Reza Arap",
-      role:"Kreator konten, Musisi (Weird Genius)",
-      imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7J6sq3JDeUJotE0TxIORoApobJEY9SFCsQ&s"
+      name:"Sowam Habibi",
+      role:"Google Indonesia",
+      imageUrl:"https://www.invofest-harkatnegeri.com/assets/seminar/seminar%20sowam.png"
 
     },{
-      name:"Fujianti Utami Putri",
-      role:"Kreator konten",
-      imageUrl:"https://riaupos.co/wp-content/uploads/2024/01/11-Fujianti-Utami-Putri.jpg"
+      name:"Lhuqita Fazry",
+      role:"Mobile Development Developer, Founder Rumah Coding Indonesia",
+      imageUrl:"https://www.invofest-harkatnegeri.com/assets/workshop/workshop%20mobile.png"
 
     },
   ];
@@ -35,15 +36,31 @@ function App() {
       "Invofest (Informatics Vocational Festival) adalah festival tahunan yang bertujuan untuk menginspirasi dan memberdayakan generasi muda Indonesia dalam menghadapi era digital. Dengan mengusung tema “Beyond Limits, Beyond Intelligence: Innovate for a Smarter Tomorrow ”.",
     },
     {
-      title: "Apa itu InpoPest?",
+      title: "Kapan dan di mana Invofest akan diselenggarakan?",
       description:
-      "Invofest (Informatics Vocational Festival) adalah festival tahunan yang bertujuan untuk menginspirasi dan memberdayakan generasi muda Indonesia dalam menghadapi era digital. Dengan mengusung tema “Beyond Limits, Beyond Intelligence: Innovate for a Smarter Tomorrow ”.",
+      "Invofest akan diselenggarakan pada tanggal 15-17 November 2024 di Jakarta Convention Center (JCC), Jakarta, Indonesia.",
     },
     {
-      title: "Apa itu InpoPest?",
+      title: "Apakah ada biaya pendaftaran di INVOFEST?",
       description:
-      "Invofest (Informatics Vocational Festival) adalah festival tahunan yang bertujuan untuk menginspirasi dan memberdayakan generasi muda Indonesia dalam menghadapi era digital. Dengan mengusung tema “Beyond Limits, Beyond Intelligence: Innovate for a Smarter Tomorrow ”.",
+      "Semua kegiatan dipastikan berbayar ya teman-teman.",
     },
+    {
+      title: "Bagaimana saya mengetahui pemenang kompetisi?",
+      description:
+      "Pemenang akan diinformasikan melalui media sosial instagram dari invofest @invofest_harkatnegeri.",
+    },
+    {
+      title: "Apa yang didapat pemenang dalam kompetisi?",
+      description:
+      "Pemenang kompetisi akan mendapatkan hadiah trophy, uang pembinaan, dan e-sertifikat.",
+    },
+    {
+      title: "Bagaimana cara mendaftar event?",
+      description:
+      "Buka https://www.invofest-harkatnegeri.com lalu pergi ke halaman event yang anda ingin ikuti atau scroll kebagian bawah halaman beranda dengan klik mendaftar pada salah satu eventnya, jika sudah maka diarahkan ke halaman detail event dan klik tombol 'Registrasi' maka akan diarahkan ke google form pengisian pendaftaran event yang diikuti.",
+    },
+    
   ];
 
   const cardItems =   [
@@ -73,7 +90,7 @@ function App() {
     <>
     <Header/>
 
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto  px-6 py-2'>
         <section
           id='hero'
           className='py-10 flex gap-10 justify-between items-center'
@@ -113,7 +130,7 @@ function App() {
                 Invofest 2025, yang diselenggarakan oleh sarjana terapan Teknik Informatika Universitas Harkat Negeri, adalah festival tahunan yang bertujuan untuk menginspirasi dan memberdayakan generasi muda Indonesia dalam menghadapi era digital. Dengan mengusung tema <b>“Beyond Limits, Beyond Intelligence: Innovate for a Smarter Tomorrow ”</b>. Invofest 2025 menghadirkan berbagai kegiatan menarik seperti kompetisi IT, workshop IT, dan seminar nasional & talkshow dengan para ahli teknologi.
               </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 px-3 mt-6'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 px-3 py-24'>
               {cardItems.map((item, index) => (
                 <Card
                   key={index}
@@ -180,7 +197,7 @@ function App() {
               <Button label="Daftar IT Talkshow" variant="primary"/>
             </div>
           </div>
-          <div className='w-2/3'>
+          <div className='w-1/3'>
             <img
               src="https://www.invofest-harkatnegeri.com/assets/Maskot-Talkshow.png"
               alt=""
@@ -211,35 +228,41 @@ function App() {
 
         <section
           id='competition'
-          className='py-10 flex gap-10 justify-between items-center'
+          className='bg-red-50 w-full py-10'
         >
-          <div className='w-2/3 flex flex-col gap-6'>
-            <h1 className='text-5xl text-red-800 font-semibold'>IT Competition</h1>
-            <p className='text-sm md:text base lg:text-[1.35rem]'>
-              <b>"From Creation to Innovation"</b> adalah sebuah kompetisi IT yang dirancang untuk menjembatani jurang antara ide kreatif dan inovasi nyata. Ajang ini menantang para talenta digital untuk tidak hanya menciptakan sesuatu yang baru, tetapi juga mengembangkannya menjadi solusi yang berdampak, berkelanjutan, dan bernilai guna tinggi.
-            </p>
-            <div className='flex gap-3'> 
-              <Button label="Daftar IT Competition" variant="primary"/>
+          <div className= 'max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 justify-between items-center w-full'>
+            <div className='w-2/3 flex flex-col gap-6'>
+              <h1 className='text-5xl text-red-800 font-semibold'>IT Competition</h1>
+              <p className='text-sm md:text base lg:text-[1.35rem]'>
+                <b>"From Creation to Innovation"</b> adalah sebuah kompetisi IT yang dirancang untuk menjembatani jurang antara ide kreatif dan inovasi nyata. Ajang ini menantang para talenta digital untuk tidak hanya menciptakan sesuatu yang baru, tetapi juga mengembangkannya menjadi solusi yang berdampak, berkelanjutan, dan bernilai guna tinggi.
+              </p>
+              <div className='flex gap-3'>
+                <Button label="Daftar IT Competition" variant="primary" />
+              </div>
             </div>
-          </div>
-          <div className='w-2/3'>
-            <img
-              src="https://www.invofest-harkatnegeri.com/assets/Maskot-Lomba.png"
-              alt=""
-            />
+            <div className='w-2/3'>
+              <img
+                src="https://www.invofest-harkatnegeri.com/assets/Maskot-Lomba.png"
+                alt=""
+              />
+            </div>
           </div>
         </section>
 
         <section
           id='collapse'
+          className='py-24'
         >
-          <div className='w-full mx-auto'>
+          <div className='w-full mx-auto mt-4
+          '>
             <div>
-              <h1 className='text-4xl font-bold flex justify-center'>Punya Pertanyaan? Lihat Disini</h1>
-              <p className='flex justify-center text-gray-600 mt-5'>Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat melihat daftar pertanyaan di bawah ini.</p>
+              <span className='text-1xl font-bold flex justify-center text-gray-500'>FAQ</span>
+              <h1 className='text-4xl font-bold flex justify-center'>Punya Pertanyaan? Lihat </h1>
+              <span className='text-4xl font-bold flex justify-center text-red-900'>Disini</span>
+              <p className='flex justify-center text-base text-gray-600 mt-5'>Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat melihat daftar pertanyaan di bawah ini.</p>
             </div>
             <div className='py-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-3 items-start'>
-              {cardItems.map((item, index) => (
+              {collapseItem.map((item, index) => (
                 <Collaps
                   key={index}
                   title={item.title}
@@ -251,6 +274,8 @@ function App() {
           </div>
         </section>
       </div>
+
+      <Footer/>
     </>
   );
 }
