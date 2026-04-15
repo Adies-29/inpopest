@@ -101,7 +101,7 @@ function App() {
               alt=""
               className='w-96'
             />
-            <p className='text-sm md:text base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600'>
+            <p className='text-sm md:text base lg:text-[1.35remtext-slate-600'>
               Invofest (Informatics Vocational Festival) adalah festival tahunan
               yang bertujuan untuk menginspirasi dan memberdayakan generasi muda
               Indonesia dalam menghadapi era digital. Dengan mengusung tema
