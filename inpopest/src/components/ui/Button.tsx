@@ -1,13 +1,17 @@
 interface ButtonProps {
     label: string;
     variant?: "primary" | "secondary";
+    type?: "button" | "submit";
     className?: string;
     onClick?: () => void;
+    isLoading?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
     label,
     variant= "primary",
+    type= "button",
+    isLoading= false,
     className,
 }) => {
     const baseStyle = 
