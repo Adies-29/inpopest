@@ -1,9 +1,9 @@
-import './App.css'
+import '../App.css'
 import Header from '../components/Header.tsx';
 import Button from "../components/ui/Button";
 import SpeakerCard from '../components/ui/SpeakerCard';
 import { Collaps } from '../components/ui/Collaps';
-import { Card } from '../components/ui/Card'
+import { Card } from '../components/ui/Card';
 import Footer from '../components/Footer';
 
 
@@ -273,8 +273,6 @@ function App() {
           </div>
         </section>
       </div>
-
-      <Footer/>
     </>
   );
 }
