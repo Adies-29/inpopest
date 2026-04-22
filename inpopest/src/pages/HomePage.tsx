@@ -1,10 +1,10 @@
 import './App.css'
-import Header from './components/Header';
-import Button from './components/ui/Button';
-import SpeakerCard from './components/ui/SpeakerCard';
-import { Collaps } from './components/ui/Collaps';
-import { Card } from './components/ui/Card'
-import Footer from './components/Footer';
+import Header from '../components/Header';
+import Button from "../components/ui/Button";
+import SpeakerCard from '../components/ui/SpeakerCard';
+import { Collaps } from '../components/ui/Collaps';
+import { Card } from '../components/ui/Card'
+import Footer from '../components/Footer';
 
 
 
@@ -109,8 +109,8 @@ function App() {
               Tomorrow ”</b>.
             </p>
             <div className='flex gap-3'> 
-              <Button label="Info Selengkapnya" variant="primary" className=''/>
-              <Button label="Hubungi Panitia" variant="secondary" className=''/>
+              <Button label="Info Selengkapnya" variant="primary"/>
+              <Button label="Hubungi Panitia" variant="secondary"/>
             </div>
           </div>
           <div className='w-1/3'>
@@ -140,7 +140,6 @@ function App() {
                   <Button
                     label='Info Selengkapnya'
                     variant='primary'
-                    className='mt-auto'
                   />
                 </Card>
               ))}
@@ -179,7 +178,7 @@ function App() {
               Seminar Nasional Teknologi Informasi ini mengangkat tema <b>"Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif.”</b>Kami bertujuan untuk menggeser fokus dari ketakutan akan kompetisi menjadi eksplorasi peluang kolaborasi. Seminar ini akan mengupas tuntas bagaimana kita dapat merancang sistem, etika, dan lingkungan kerja di mana AI berfungsi sebagai mitra yang memperkuat kecerdasan, kreativitas, dan produktivitas manusia—bukan sebagai pengganti.
             </p>
             <div className='flex gap-3'> 
-              <Button label="Daftar IT Seminar" variant="primary" className=''/>
+              <Button label="Daftar IT Seminar" variant="primary" />
             </div>
           </div>
         </section>
@@ -194,7 +193,7 @@ function App() {
               Talkshow berskala nasional: “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan.” Acara ini dirancang bukan untuk membahas teknologi sebagai entitas yang dingin dan terpisah, melainkan untuk menggali bagaimana kita dapat menanamkan nilai-nilai kemanusiaan—seperti empati, etika, dan kreativitas—ke dalam inti pengembangan AI. Kami akan mengupas tuntas visi masa depan di mana AI tidak menjadi pesaing, tetapi menjadi mitra kolaboratif yang memperkuat potensi unik manusia. Talkshow ini bertujuan untuk menginspirasi generasi muda dan para penggiat teknologi untuk tidak hanya menjadi pengguna, tetapi juga menjadi arsitek masa depan digital yang lebih manusiawi. Mari bergabung untuk meningkatkan pengetahuan, mengembangkan potensi diri, dan menjadi bagian dari dialog penting dalam membentuk era kolaborasi manusia dan AI.
             </p>
             <div className='flex gap-3'> 
-              <Button label="Daftar IT Talkshow" variant="primary" className=''/>
+              <Button label="Daftar IT Talkshow" variant="primary" />
             </div>
           </div>
           <div className='w-1/3'>
@@ -221,7 +220,7 @@ function App() {
               Workshop "AI for a Sustainable Future: The Role of Z Generation in the Digital Era” ini menjembatani antara potensi Generasi Z dan kekuatan AI untuk menciptakan masa depan yang berkelanjutan. Peserta akan dibekali wawasan dan alat untuk mentransformasi ide-ide inovatif menjadi solusi lingkungan yang nyata dan terukur di era digital.
             </p>
             <div className='flex gap-3'> 
-              <Button label="Daftar IT Workshop" variant="primary" className=''/>
+              <Button label="Daftar IT Workshop" variant="primary" />
             </div>
           </div>
         </section>
@@ -237,7 +236,7 @@ function App() {
                 <b>"From Creation to Innovation"</b> adalah sebuah kompetisi IT yang dirancang untuk menjembatani jurang antara ide kreatif dan inovasi nyata. Ajang ini menantang para talenta digital untuk tidak hanya menciptakan sesuatu yang baru, tetapi juga mengembangkannya menjadi solusi yang berdampak, berkelanjutan, dan bernilai guna tinggi.
               </p>
               <div className='flex gap-3'>
-                <Button label="Daftar IT Competition" variant="primary" className='' />
+                <Button label="Daftar IT Competition" variant="primary"  />
               </div>
             </div>
             <div className='w-2/3'>

@@ -53,7 +53,7 @@ export default function LoginForm(){
                 />
 
                 <div>
-                    <Button label="Login" variant="primary"/>
+                    <Button type="submit" label="Login"/>
                 </div>
             </form>
         </div>

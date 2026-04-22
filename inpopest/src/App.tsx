@@ -6,10 +6,10 @@ function App() {
 
   return (
     <>
-    <div className=" grid grid-cols-2 max-w-7xl mx-auto contain-content gap-4 ">
+    <div className=" grid max-w-7xl mx-auto contain-content gap-4 ">
       <LoginForm />
 
-      <RegisterForm/>
+      {/* <RegisterForm/> */}
 
       <RegisterEvent/>
 
