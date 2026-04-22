@@ -1,5 +1,4 @@
 import LoginForm from "./pages/LoginForm";
-import RegisterForm from "./pages/RegisterForm";
 import RegisterEvent from "./pages/RegisterEvent";
 
 function App() {
@@ -8,9 +7,6 @@ function App() {
     <>
     <div className=" grid max-w-7xl mx-auto contain-content gap-4 ">
       <LoginForm />
-
-      {/* <RegisterForm/> */}
-
       <RegisterEvent/>
 
     </div>
