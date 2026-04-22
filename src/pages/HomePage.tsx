@@ -4,7 +4,6 @@ import Button from "../components/ui/Button";
 import SpeakerCard from '../components/ui/SpeakerCard';
 import { Collaps } from '../components/ui/Collaps';
 import { Card } from '../components/ui/Card';
-import Footer from '../components/Footer';
 
 
 
