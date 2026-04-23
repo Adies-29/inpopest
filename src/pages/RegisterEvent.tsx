@@ -28,7 +28,7 @@ const schema = z.object({
     event: z.string().min(1, "Event Harus diisi!"),
 })
 
-export default function RegisterForm(){
+export default function RegisterEvent(){
      const {
         register, 
         handleSubmit, 
