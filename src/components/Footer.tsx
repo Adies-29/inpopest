@@ -1,4 +1,4 @@
-import { NavLink } from "./ui/NavLink";
+import { NavBarLink }  from "./ui/NavBarLink";
 import { Home, Mic, Users, Trophy, Laptop, CirclePlay } from "lucide-react";
 
 export const Footer: React.FC = () => {
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
                         </h3>
                         <div className="flex flex-col gap-3">
                             {menuItems.map((item) => (                        
-                                <NavLink
+                                <NavBarLink
                                     key={item.label}
                                     label={item.label}
                                     href={item.href}
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
                         </h3>
                         <div className="flex flex-col gap-3">
                             {mediaItems.map((item) => (
-                                <NavLink
+                                <NavBarLink
                                     key={item.label}
                                     label={item.label}
                                     href={item.href}
