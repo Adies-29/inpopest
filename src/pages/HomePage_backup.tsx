@@ -1,5 +1,4 @@
 import '../App.css'
-import Header from '../components/Header.tsx';
 import Button from "../components/ui/Button.tsx";
 import SpeakerCard from '../components/ui/SpeakerCard.tsx';
 import { Collaps } from '../components/ui/Collaps.tsx';
@@ -247,15 +246,13 @@ function App() {
 
         <section
           id='collapse'
-          className='py-24'
-        >
-          <div className='w-full mx-auto mt-4
-          '>
-            <div>
-              <span className='text-1xl font-bold flex justify-center text-gray-500'>FAQ</span>
-              <h1 className='text-4xl font-bold flex justify-center'>Punya Pertanyaan? Lihat </h1>
-              <span className='text-4xl font-bold flex justify-center text-red-900'>Disini</span>
-              <p className='flex justify-center text-base text-gray-600 mt-5'>Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat melihat daftar pertanyaan di bawah ini.</p>
+          className='py-24'>
+          <div className='w-full mx-auto mt-4'>
+            <div className='flex flex-col justify-center items-center'>
+              <span className='text-1xl font-bold  text-gray-500'>FAQ</span>
+              <h1 className='text-4xl font-bold'>Punya Pertanyaan? Lihat </h1>
+              <span className='text-4xl font-bold  text-red-900'>Disini</span>
+              <p className='text-base text-gray-600 mt-5'>Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat melihat daftar pertanyaan di bawah ini.</p>
             </div>
             <div className='py-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-3 items-start'>
               {collapseItem.map((item, index) => (

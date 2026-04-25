@@ -32,6 +32,7 @@ function App() {
 
         <Route element={<AuthLayout/>}>
           <Route path="/Login" element={<LoginForm/>} />
+          <Route path="/Login" element={<HomePage/>} />
           <Route path="/register" element={<RegisterEvent />} />
         </Route>
 
