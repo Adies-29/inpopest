@@ -3,6 +3,7 @@ import Button from "../components/ui/Button.tsx";
 import SpeakerCard from '../components/ui/SpeakerCard.tsx';
 import { Collaps } from '../components/ui/Collaps.tsx';
 import { Card } from '../components/ui/Card.tsx';
+import { ChevronDown } from 'lucide-react';
 
 
 
@@ -260,6 +261,7 @@ function App() {
                   key={index}
                   title={item.title}
                   description={item.description}
+                  icon={ChevronDown}
                 />
               ))}
 

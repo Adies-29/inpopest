@@ -1,3 +1,5 @@
+
+import { ChevronDown } from 'lucide-react';
 import '../App.css'
 import Button from "../components/ui/Button.tsx";
 import { Collaps } from '../components/ui/Collaps.tsx';
@@ -60,9 +62,10 @@ export default function Copetition() {
     
   ];
 
+
     return (
         <div className='min-h-screen'>
-            <section id='competition'>
+            <section id='hero'>
                 <div className='max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 justify items-center w-full'>
                     
                     <div className='w-full md:w-2/3 flex flex-col gap-6'>
@@ -137,11 +140,28 @@ export default function Copetition() {
                             key={index}
                             title={item.title}
                             description={item.description}
+                            icon={ChevronDown}
+                            variant='secondary'
                             />  
                         ))}
                     </div>
                 </div>
+            </section>
 
+            <section>
+                <div>
+                    <div className='h-fit mt-4 sm:mt-8 lg:mt-16 rounded-md flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden'>
+                        <h1 className='text-4xl font-semibold'>Sponsor
+                            <span className='text-4xl font-bold text-red-900'>INVOVEST 2025</span>
+                        </h1>
+                    </div>
+
+                    <div className='h-fit mt-4 sm:mt-8 lg:mt-16 rounded-md flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden'>
+                        <h1 className='text-4xl font-semibold'>Media Partner
+                            <span className='text-4xl font-bold text-red-900'>INVOVEST 2025</span>
+                        </h1>
+                    </div>
+                </div>
             </section>
         </div>
     )
