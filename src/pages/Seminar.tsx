@@ -1,4 +1,4 @@
-import { Calendar, ChevronDown, Clock1, MapPinCheck, University } from "lucide-react";
+import { Calendar, ChevronDown, Clock1, MapPin, University } from "lucide-react";
 import Button from "../components/ui/Button";
 import { Collaps } from "../components/ui/Collaps";
 import SpeakerCard from "../components/ui/SpeakerCard";
@@ -128,7 +128,7 @@ export default function Seminar() {
                         />
                         <Collaps
                         title="Kamis, 27 November 2025"
-                        icon={MapPinCheck}
+                        icon={MapPin}
                         />
                         <Collaps
                         title="Kamis, 27 November 2025"
