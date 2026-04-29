@@ -15,8 +15,8 @@ export const Button: React.FC<ButtonProps> = ({
     const baseStyle =
         "px-4 py-2 rounded font-medium";
     const varianStyle = {
-        primary: "bg-red-600 text-white",
-        secondary: "border border-red-600 text-red-600"
+        primary: "bg-[#802D43] text-white",
+        secondary: "border border-[#802D43] text-[#802D43]"
     };
     return (
         <button

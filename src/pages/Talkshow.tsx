@@ -72,8 +72,8 @@ export default function Talkshow() {
             <section id="hero" className="py-20">
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 items-center w-full">
                     <div className="w-full flex flex-col gap-6 md:w-2/1">
-                        <h1 className="text-5xl text-red-800 font-semibold">IT Talkshow</h1>
-                        <h3 className='text-3xl text-red-800 font-semibold'>“Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan”</h3>
+                        <h1 className="text-5xl text-[#802D43] font-semibold">IT Talkshow</h1>
+                        <h3 className='text-3xl text-[#802D43] font-semibold'>“Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan”</h3>
                         <p>Talkshow “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan” Sebuah diskusi interaktif yang mengeksplorasi cara mengintegrasikan nilai-nilai kemanusiaan seperti etika, empati, dan kreativitas ke dalam pengembangan kecerdasan buatan. yang bertujuan menginspirasi audiens untuk membangun dan memanfaatkan AI sebagai alat kolaboratif yang memperkuat potensi unik manusia, bukan sebagai penggantinya.</p>
                         <div className="mt-4">
                             <Button label="Daftar sekarang" variant="primary" /> 
@@ -90,7 +90,7 @@ export default function Talkshow() {
              <section id="deskripsi">
                 <div className="max-w-7xl mx-auto py-20">
                     <div className="flex flex-col justify-center items-center gap-6 max-w-5xl mx-auto px-6">
-                        <h1 className="font-semibold text-3xl text-center">Tentang IT Talkshow</h1>
+                        <h1 className="font-semibold text-3xl text-center text-[#802D43]">Tentang IT Talkshow</h1>
                         <p className="text-center md:text-lg">Seiring teknologi, khususnya kecerdasan buatan (AI), yang semakin meresap ke dalam setiap aspek kehidupan kita, muncul sebuah pertanyaan fundamental: Apakah kita sedang menciptakan teknologi yang melayani manusia, atau justru sebaliknya? Untuk menjawab pertanyaan tersebut, kami mempersembahkan talkshow berskala nasional: “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan.” Acara ini dirancang bukan untuk membahas teknologi sebagai entitas yang dingin dan terpisah, melainkan untuk menggali bagaimana kita dapat menanamkan nilai-nilai kemanusiaan—seperti empati, etika, dan kreativitas—ke dalam inti pengembangan AI. Kami akan mengupas tuntas visi masa depan di mana AI tidak menjadi pesaing, tetapi menjadi mitra kolaboratif yang memperkuat potensi unik manusia.</p>
                     </div>
                 </div>
@@ -98,7 +98,10 @@ export default function Talkshow() {
 
             <section id="speakers">
                 <div className="max-w-7xl mx-auto py-20">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-10 px-3 w-full">
+                    <div className="py-6">
+                         <h2 className="font-semibold text-3xl text-center text-[#802D43]" >Temui Pembicara Khusus Kami</h2>
+                    </div>
+                    <div className=" py-20 grid grid-cols-1 md:grid-cols-4 gap-10 px-3 w-full">
                         {speakers.map((speaker, index) => (
                             <SpeakerCard
                                 key={index}
@@ -114,7 +117,7 @@ export default function Talkshow() {
             <section id="jadwal">
                 <div>
                     <div className="py-6">
-                        <h1 className="font-semibold text-3xl text-center">Pelaksanaan IT Seminar</h1>
+                        <h1 className="font-semibold text-3xl text-center text-[#802D43]">Pelaksanaan IT Seminar</h1>
                     </div>
                     <div className="py-20 grid grid-cols-1 md:grid-cols-2 gap-6 ">
                         <Collaps

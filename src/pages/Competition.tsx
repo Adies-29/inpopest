@@ -69,8 +69,8 @@ export default function Copetition() {
                 <div className='max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 justify items-center w-full'>
                     
                     <div className='w-full md:w-2/3 flex flex-col gap-6'>
-                        <h1 className='text-5xl text-red-800 font-semibold'>IT Competition</h1>
-                        <h3 className='text-3xl text-red-800 font-semibold'>"From Creation to Innovation"</h3>
+                        <h1 className='text-5xl text-[#802D43] font-semibold'>IT Competition</h1>
+                        <h3 className='text-3xl text-[#802D43] font-semibold'>"From Creation to Innovation"</h3>
                         <p className='text-sm md:text-base lg:text-[1.35rem]'>
                             Kompetisi dalam INVOFEST ini mengusung tema <b>“From Creation to Innovation”</b> , Tema ini bertujuan mengajak generasi muda untuk mengembangkan inovasi dan kreativitas guna membentuk kelompok yang memiliki potensi luar biasa, yang mampu mewujudkan masa depan yang berkelanjutan.
                         </p>
@@ -102,7 +102,7 @@ export default function Copetition() {
             <section id='card-kompetisi'>
                 <div className='max-w-7xl mx-auto  px-6 py-10 '>
                     <div className='flex flex-col justify-center items-center gap-6 max-w-5xl mx-auto px-6'>
-                        <h1 className='text-5xl font-semibold text-red-600'>DAFTAR KOMPETISI</h1>
+                        <h1 className='text-5xl font-semibold text-[#802D43]'>DAFTAR KOMPETISI</h1>
                         <p className='text-xl'>Berikut Adalah Daftar Kompetisi Yang Ada Pada Event INVOFEST.</p>
                     </div>
                     <div className='py-10 grid grid-cols-1 md:grid-cols-3 gap-5 items-start'>
@@ -130,7 +130,7 @@ export default function Copetition() {
                     <div className='flex flex-col justify-center items-center'>
                         <span className='text-1xl font-bold text-gray-500'>FAQ</span>
                         <h1 className='text-4xl fon'>Punya Pertanyaan? Lihat</h1>
-                        <span className='text-4xl font-bold text-red-900'>DISINI</span>
+                        <span className='text-4xl font-bold text-[#802D43]'>DISINI</span>
                         <p className='flex justify-center text-base text-gray-600 mt-5'>Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat melihat daftar pertanyaan di bawah ini.</p>
                     </div>
 

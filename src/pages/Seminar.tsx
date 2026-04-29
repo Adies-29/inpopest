@@ -67,8 +67,8 @@ export default function Seminar() {
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10  items-center w-full">
 
                     <div className="w-full flex flex-col gap-6 md:w-2/1">
-                        <h1 className="text-5xl text-red-800 font-semibold">IT Seminar</h1>
-                        <h3 className='text-3xl text-red-800 font-semibold'>“Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif”</h3>
+                        <h1 className="text-5xl text-[#802D43] font-semibold">IT Seminar</h1>
+                        <h3 className='text-3xl text-[#802D43] font-semibold'>“Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif”</h3>
                         <p>Seminar nasional yang membahas strategi dan arsitektur teknologi untuk menciptakan sistem di mana manusia dan AI bekerja sebagai mitra yang sinergis.Yang bertujuan mengubah paradigma dari persaingan menjadi kolaborasi, serta meningkatkan pengetahuan peserta dalam merancang teknologi AI yang berpusat pada manusia.</p>
                         <div className="mt-4">
                             <Button label="Daftar sekarang" variant="primary"/>
@@ -86,7 +86,7 @@ export default function Seminar() {
             <section id="deskripsi">
                 <div className="max-w-7xl mx-auto py-20">
                     <div className="flex flex-col justify-center items-center gap-6 max-w-5xl mx-auto px-6">
-                        <h1 className="font-semibold text-3xl text-center">Tentang IT SEMINAR</h1>
+                        <h1 className="font-semibold text-3xl text-center text-[#802D43]">Tentang IT SEMINAR</h1>
                         <p className="text-center md:text-lg">Seminar bertajuk “Human-AI Integration: Merancang Arsitektur Kolaboratif, Di tengah pesatnya kemajuan kecerdasan buatan (AI), narasi yang sering muncul adalah tentang persaingan antara manusia dan mesin. Kekhawatiran akan penggantian peran manusia oleh teknologi cerdas menjadi diskusi utama di berbagai sektor. Namun, bagaimana jika kita mengubah paradigma tersebut? Seminar Nasional Teknologi Informasi ini hadir untuk menjawab tantangan itu dengan mengangkat tema "Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif.” Kami bertujuan untuk menggeser fokus dari ketakutan akan kompetisi menjadi eksplorasi peluang kolaborasi. Seminar ini akan mengupas tuntas bagaimana kita dapat merancang sistem, etika, dan lingkungan kerja di mana AI berfungsi sebagai mitra yang memperkuat kecerdasan, kreativitas, dan produktivitas manusia—bukan sebagai pengganti.</p>
                     </div>
                 </div>
@@ -95,10 +95,10 @@ export default function Seminar() {
             <section id="card">
                 <div className="max-w-7xl mx-auto py-20">
                     <div className="py-6">
-                        <h1 className="font-semibold text-3xl text-center">Temui Pembicara Khusus Kami</h1>
+                        <h1 className="font-semibold text-3xl text-center text-[#802D43]">Temui Pembicara Khusus Kami</h1>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p-3 w-full">
+                    <div className="py-20 grid grid-cols-1 md:grid-cols-3 gap-10 p-3 w-full">
                         {speakers.map((speaker, index) =>(
                             <SpeakerCard
                             key={index}
@@ -115,7 +115,7 @@ export default function Seminar() {
             <section id="jadwal">
                 <div>
                     <div className="py-6">
-                        <h1 className="font-semibold text-3xl text-center">Pelaksanaa IT Seminar</h1>
+                        <h1 className="font-semibold text-3xl text-center text-[#802D43]">Pelaksanaan IT Seminar</h1>
                     </div>
                     <div className="py-20 grid grid-cols-1 md:grid-cols-2 gap-6 ">
                         <Collaps
@@ -143,7 +143,7 @@ export default function Seminar() {
                     <div className='flex flex-col justify-center items-center'>
                         <span className='text-1xl font-bold text-gray-500'>FAQ</span>
                         <h1 className='text-4xl fon'>Punya Pertanyaan? Lihat</h1>
-                        <span className='text-4xl font-bold text-red-900'>DISINI</span>
+                        <span className='text-4xl font-bold text-[#802D43]'>DISINI</span>
                         <p className='flex justify-center text-base text-gray-600 mt-5'>Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat melihat daftar pertanyaan di bawah ini.</p>
                     </div>
 

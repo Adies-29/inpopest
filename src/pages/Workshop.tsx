@@ -91,8 +91,8 @@ export default function Workshop() {
             <section id="hero" className="py-20" >
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 items-center w-full">
                     <div className="w-full flex flex-col gap-6 md:w-2/1">
-                        <h1 className="text-5xl text-red-800 font-semibold">IT Workshop</h1>
-                        <h3 className='text-3xl text-red-800 font-semibold'>“AI for a Sustainable Future: The Role of Z Generation in the Digital Era”</h3>
+                        <h1 className="text-5xl text-[#802D43] font-semibold">IT Workshop</h1>
+                        <h3 className='text-3xl text-[#802D43] font-semibold'>“AI for a Sustainable Future: The Role of Z Generation in the Digital Era”</h3>
                         <p>IT Workshop ini menjembatani antara potensi Generasi Z dan kekuatan AI untuk menciptakan masa depan yang berkelanjutan. Peserta akan dibekali wawasan dan alat untuk mentransformasi ide-ide inovatif menjadi solusi lingkungan yang nyata dan terukur di era digital.</p>
                         <div className="mt-4">
                             <Button label="Daftar sekarang" variant="primary" />
@@ -109,7 +109,7 @@ export default function Workshop() {
             <section id="deskripsi">
                 <div className="max-w-7xl mx-auto py-20">
                     <div className="flex flex-col justify-center items-center gap-6 max-w-5xl mx-auto px-6">
-                        <h1 className="font-semibold text-3xl text-center">Tentang IT Workshop</h1>
+                        <h1 className="font-semibold text-3xl text-center text-[#802D43]">Tentang IT Workshop</h1>
                         <p className="text-center md:text-lg">Workshop “AI for a Sustainable Future: The Role of Z Generation in the Digital Era” ini didesain khusus untuk Generasi Z, para digital natives yang berada di persimpangan antara inovasi teknologi dan tantangan keberlanjutan global. Peserta akan diajak untuk menyelami bagaimana Kecerdasan Buatan (AI) bukan hanya sekadar teknologi canggih, tetapi juga alat yang ampuh untuk menciptakan solusi nyata bagi isu-isu lingkungan. Melalui sesi inspiratif, pengenalan konsep, dan praktik langsung (hands-on), workshop ini bertujuan memberdayakan Gen Z untuk menjadi agen perubahan di era digital, menggunakan keahlian mereka untuk masa depan bumi yang lebih baik</p>
                     </div>
                 </div>
@@ -117,7 +117,10 @@ export default function Workshop() {
 
             <section id="speakers">
                 <div className="max-w-7xl mx-auto py-20">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-3 w-full">
+                    <div className="py-6">
+                        <h2 className="font-semibold text-3xl text-center text-[#802D43]">Temui Pembicara Khusus Kami</h2>
+                    </div>
+                    <div className="py-20 grid grid-cols-1 md:grid-cols-3 gap-10 px-3 w-full">
                         {speakers.map((speaker, index) => (
                             <SpeakerCard
                                 key={index}
