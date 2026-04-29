@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { ChevronDown, type LucideIcon } from "lucide-react";
+import { type LucideIcon } from "lucide-react";
 
 interface CollapsProps {
   title: string;
-  description?: string; // Tanda tanya artinya deskripsi tidak wajib diisi
+  description?: string;
   variant?: "primary" | "secondary";
   icon: LucideIcon;
 }

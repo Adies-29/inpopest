@@ -1,5 +1,4 @@
 
-import Footer from "./components/Footer";
 import Copetition from "./pages/Competition";
 import HomePage from "./pages/HomePage_backup"
 import LoginForm from "./pages/LoginForm";
