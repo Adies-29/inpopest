@@ -77,7 +77,7 @@ export const Footer: React.FC = () => {
 
                 </div>
                 <div className="mt-12 pt-6 border-t border-red-200 flex justify-between items-center text-sm text-gray-500 px-3">
-                    <p>© 2026 INVOFEST. All Rights Reserved.</p>
+                    <p>© 2026 INPOPEST. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
