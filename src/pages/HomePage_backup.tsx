@@ -262,6 +262,7 @@ function App() {
                   title={item.title}
                   description={item.description}
                   icon={ChevronDown}
+                  variant='secondary'
                 />
               ))}
 

@@ -15,8 +15,6 @@ export const Collaps: React.FC<CollapsProps> = ({
   icon: Icon,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
-  // Cek apakah komponen ini punya fungsi collapse atau cuma teks biasa
   const isCollapsible = !!description; 
 
   const styles = {
@@ -36,16 +34,19 @@ export const Collaps: React.FC<CollapsProps> = ({
     <div className="border-gray-400 border-2 rounded-md shadow-sm border-r-4 border-r-[#802D43] mb-4 overflow-hidden">
       <button
         type="button"
-        // Hanya jalankan onClick jika ada deskripsi
         onClick={isCollapsible ? () => setIsOpen(!isOpen) : undefined}
-        // Ganti cursor: pointer hanya jika bisa diklik
         className={`w-full flex items-center bg-white transition-all ${
           isCollapsible ? "cursor-pointer hover:bg-gray-50" : "cursor-default"
         }`}
       >
         {/* Icon Box */}
-        <div className={`p-4 ${activeStyle.bg} ${activeStyle.icon} flex items-center justify-center min-w-60px`}>
-          <Icon size={24} />
+        <div className={`p-4 ${activeStyle.bg} ${activeStyle.icon} flex items-center justify-center min-w-15`}>
+          <Icon 
+            size={24} 
+            className={`transition-transform duration-300 ${
+              isCollapsible && isOpen ? "rotate-180" : ""
+            }`}
+          />
         </div>
 
         {/* Judul */}
@@ -54,21 +55,8 @@ export const Collaps: React.FC<CollapsProps> = ({
             {title}
           </span>
         </div>
-
-        {/* Hanya tampilkan Chevron jika bisa diklik */}
-        {isCollapsible && (
-          <div className="p-4">
-            <ChevronDown
-              size={20}
-              className={`text-gray-400 transition-transform duration-300 ${
-                isOpen ? "rotate-180" : ""
-              }`}
-            />
-          </div>
-        )}
       </button>
 
-      {/* Konten hanya muncul jika isCollapsible benar dan isOpen benar */}
       {isCollapsible && isOpen && (
         <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
           <p className="text-gray-600 text-sm">{description}</p>

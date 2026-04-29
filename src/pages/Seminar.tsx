@@ -62,15 +62,15 @@ export default function Seminar() {
     return (
         <div className="min-h-screen">
 
-            <section id="hero">
+            <section id="hero" className="py-20">
                 
-                <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 justify items-center w-full">
+                <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10  items-center w-full">
 
-                    <div className="w-full flex flex-col gap-6 md:w-1/1">
+                    <div className="w-full flex flex-col gap-6 md:w-2/1">
                         <h1 className="text-5xl text-red-800 font-semibold">IT Seminar</h1>
                         <h3 className='text-3xl text-red-800 font-semibold'>“Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif”</h3>
                         <p>Seminar nasional yang membahas strategi dan arsitektur teknologi untuk menciptakan sistem di mana manusia dan AI bekerja sebagai mitra yang sinergis.Yang bertujuan mengubah paradigma dari persaingan menjadi kolaborasi, serta meningkatkan pengetahuan peserta dalam merancang teknologi AI yang berpusat pada manusia.</p>
-                        <div>
+                        <div className="mt-4">
                             <Button label="Daftar sekarang" variant="primary"/>
                         </div>
                     </div>

@@ -65,7 +65,7 @@ export default function Copetition() {
 
     return (
         <div className='min-h-screen'>
-            <section id='hero'>
+            <section id='hero' className="py-20">
                 <div className='max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-10 justify items-center w-full'>
                     
                     <div className='w-full md:w-2/3 flex flex-col gap-6'>
@@ -74,7 +74,7 @@ export default function Copetition() {
                         <p className='text-sm md:text-base lg:text-[1.35rem]'>
                             Kompetisi dalam INVOFEST ini mengusung tema <b>“From Creation to Innovation”</b> , Tema ini bertujuan mengajak generasi muda untuk mengembangkan inovasi dan kreativitas guna membentuk kelompok yang memiliki potensi luar biasa, yang mampu mewujudkan masa depan yang berkelanjutan.
                         </p>
-                        <div className='flex gap-3'>
+                        <div className='flex gap-3 mt-4'>
                             <Button label="Daftar IT Competition" variant="primary" />
                             <Button label="Hubungi Panitia" variant="secondary"/>
                         </div>
