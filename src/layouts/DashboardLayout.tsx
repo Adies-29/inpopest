@@ -1,10 +1,10 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet} from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
 
 export default function DashboardLayout(){
 
     const logout = useAuthStore((state) => state.logout )
-    const navigate = useNavigate();
+    
 
     // fungsi logout
     const handleLogout = () => {
